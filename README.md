@@ -24,12 +24,12 @@ Self-hosting UniFi Network Application allows users to install and manage the Un
 As base for any testing with Network Application, we must first have automated way of installing selected version and complete the setup which involves few basic steps - specifying name/country and admin credentials (can use local admin to simplify flow).
 See "Additional Notes" below on tips how to get started and execute flow manually.
 
-**Part 1** - Setup Network application via Web UI.
+**Part 1 - Setup Network application via Web UI.**
 After setup completion we would like to verify that:
 - `Dashboard` page -> `Admin Activity` widget lists admin activity with admin name specified in setup step
 - `Settings` page -> `System` tab -> `General` section -> `Country/Region` dropdown value matches configuration during setup
 
-**Part 2** - Setup Network application via API.
+**Part 2 - Setup Network application via API.**
 Use Part 1 as template to observe executed API calls:
 - `POST /api/cmd/sitemgr`  '{cmd: "add-default-admin", name: "admin", email: "network-admin@gmail.com", x_password: "password"}' - to create local admin
 - `POST /api/set/setting/super_identity` '{name: "UniFi Network"}' - to set application name

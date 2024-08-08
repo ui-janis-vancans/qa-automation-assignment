@@ -30,6 +30,7 @@ After setup completion we would like to verify that:
 - `Dashboard` page -> `Admin Activity` widget lists admin activity with admin name specified in setup step
 - `Settings` page -> `System` tab -> `General` section -> `Country/Region` dropdown value matches configuration during setup
 
+
 **Part 2 - Setup Network application via API.**
 
 Use Part 1 as template to observe executed API calls:

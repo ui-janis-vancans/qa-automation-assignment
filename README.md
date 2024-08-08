@@ -38,6 +38,7 @@ Use Part 1 as template to observe executed API calls:
 - `POST /api/set/setting/country` '{code: "840"}' - to set country/region
 - `POST /api/set/setting/locale` '{timezone: "Europe/Riga"}' - to set locale/timezone
 - `POST /api/cmd/system` '{cmd: "set-installed"}' - to set configured state
+
 After setup completetion we would like to verify that:
 - `GET /api/self` returns admin with configured "name"
 - `GET /api/s/default/get/setting/country` returns configured country "code"

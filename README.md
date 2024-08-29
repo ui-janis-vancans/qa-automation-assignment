@@ -34,11 +34,11 @@ After setup completion we would like to verify that:
 **Part 2 - Setup Network application via API.**
 
 Use Part 1 as template to observe executed API calls:
-- `POST /api/cmd/sitemgr`  '{cmd: "add-default-admin", name: "admin", email: "network-admin@gmail.com", x_password: "password"}' - to create local admin
-- `POST /api/set/setting/super_identity` '{name: "UniFi Network"}' - to set application name
-- `POST /api/set/setting/country` '{code: "840"}' - to set country/region
-- `POST /api/set/setting/locale` '{timezone: "Europe/Riga"}' - to set locale/timezone
-- `POST /api/cmd/system` '{cmd: "set-installed"}' - to set configured state
+- `POST /api/cmd/sitemgr`  '{"cmd": "add-default-admin", "name": "admin", "email": "network-admin@gmail.com", "x_password": "password"}' - to create local admin
+- `POST /api/set/setting/super_identity` '{"name": "UniFi Network"}' - to set application name
+- `POST /api/set/setting/country` '{"code": "840"}' - to set country/region
+- `POST /api/set/setting/locale` '{"timezone": "Europe/Riga"}' - to set locale/timezone
+- `POST /api/cmd/system` '{"cmd": "set-installed"}' - to set configured state
 
 After setup completetion we would like to verify that:
 - `GET /api/self` returns admin with configured "name"

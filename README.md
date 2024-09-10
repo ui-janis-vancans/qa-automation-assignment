@@ -22,7 +22,10 @@ Self-hosting UniFi Network Application allows users to install and manage the Un
 ## Task
 
 As base for any testing with Network Application, we must first have automated way of installing selected version and complete the setup which involves few basic steps - specifying name/country and admin credentials (can use local admin to simplify flow).
-See "Additional Notes" below on tips how to get started and execute flow manually.
+Application startup before running test suite is considered as part of requirements, this can be achieved by starting docker instance or automating installation of application from local file/installation URL.
+See "Additional Notes" below on tips how to get started.
+
+**Note:** Once application setup is completed, it has configured state. The test steps in further task description require application to be in **factory-default** state. Application data can be cleared by uninstalling application and removing associated data or by modifying [system.properties](https://help.ui.com/hc/en-us/articles/205202580-Explaining-the-UniFi-system-properties-File) - set `is_default=true` and restart the application. When running in docker without attached volume, no additional steps are needed as each new container show have default state. 
 
 **Part 1 - Setup Network application via Web UI.**
 
